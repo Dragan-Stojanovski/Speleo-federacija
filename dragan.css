@@ -1,0 +1,1842 @@
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("assets/fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("assets/fonts/OpenSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("assets/fonts/OpenSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "OpenSans-Light";
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: black;
+  margin: 0;
+ 
+}
+
+/*INTRO*/
+.speleo_intro_background_blur_image {
+  background-image: url(assets/images/index_speleo_intro1.jpg);
+  filter: blur(10px);
+  width: 100%;
+  height: 90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.speleo_intro_cover_image {
+  width: 80%;
+  height: auto;
+}
+
+.speleo_intro_cover_image img {
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  box-shadow: 15px 5px 10px rgb(125 125 125 / 25%);
+}
+.speleo_intro_text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f3d053;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 25px;
+  text-align: center;
+  bottom: -15%;
+}
+
+.speleo_intro_text_h1 {
+  color: #f3d053;
+}
+
+.speleo_intro_text_p {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/*KOPCE ZA SEKADE NIZ DOKUMENTOT*/
+#button {
+  padding: 10px 20px;
+  border: 1px solid #f3d053;
+  background-color: black;
+  /* opacity: 0.4; */
+  color: white;
+}
+
+#button:hover {
+  background-color: #f3d053;
+  color: black;
+}
+.under-main {
+  text-align: center;
+  width: 100%;
+  }
+
+.under {
+  width: 100px;
+  padding: 20px;
+  border-bottom: 4px solid gold;
+  margin: auto;
+  margin-top: -35px;
+  margin-bottom: 3em;
+}
+/*Style za zoltite boxovi*/
+.index_speleo_datetime_day {
+  position: absolute;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #f3d053;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  padding: 6px 15px;
+  margin: 0%;
+  top: 10px;
+  left: -10px;
+  clip-path: polygon(
+    0 10%,
+    100% 0%,
+    100% 0%,
+    100% 10%,
+    100% 10%,
+    90% 100%,
+    0% 100%,
+    0% 90%,
+    0% 0%
+  )
+}
+.index_speleo_news1,
+.index_speleo_news2,
+.index_speleo_news3 {
+  width:100%;
+  height: 300px;
+  border: 3px solid #ffff;
+  margin: 0 auto;
+  display: block;
+}
+
+.index_speleo_news {
+  width: 100%;
+  height: fit-content;
+ 
+  margin-top: 5%;
+}
+/*Style za vestite - blockovite*/
+.speleo_news_container_h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #ffff;
+  font-size: 40px;
+  font: weight 900px;
+  text-align:center;
+  margin-top: 200px;
+}
+.speleo_news_container {
+  width: 100%;
+}
+.index_speleo_news {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.index_speleo_news_articles {
+  position: relative;
+
+  max-width: 27%;
+  width: 100%;
+  margin-right: 0%;
+  text-align: center;
+}
+
+.index_speleo_news_articles3 {
+  position: relative;
+
+  max-width: 27%;
+  width: 100%;
+  text-align: center;
+}
+
+.speleo_news_h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #f3d053;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  height: 100px;
+}
+
+.speleo_news_text {
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom:30px;
+}
+
+/*CLUBS*/
+.clubs_head {
+  text-align: center;
+}
+.clubs {
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+}
+.club_box {
+  margin-top: 10%;
+}
+.map {
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.map > img {
+  width: 600px;
+  height: 400px;
+}
+.area1 {
+  width: 100%;
+  height: 400px;
+}
+.clubs_box {
+  background-color: #1c1c1c;
+  width: 40%;
+  height: 500px;
+  float: right;
+  border-radius: 20px;
+  margin-right: 5%;
+}
+.clubs_head {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #ffff;
+  font-size: 40px;
+  font: weight 900px;
+  text-align: center;
+  margin-top: 150px;
+}
+.headings_clubs {
+  width: 100%;
+  height: 150px;
+}
+.headings_of_clubs {
+  width: 50%;
+  display: inline-block;
+  margin-left: 5%;
+}
+.headings_of_clubs h3 {
+  color: gold;
+}
+.headings_of_clubs h2 {
+  color: white;
+}
+.logo_clubs {
+  width: 30%;
+  height: 80px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+.image_in_box {
+  margin-top: 5%;
+}
+.image_in_box > img {
+  width: 80%;
+  height: 250px;
+  margin-left: 10%;
+  border-radius: 20px;
+  /* margin */
+}
+.learn_more a {
+  float: right;
+  margin-right: 5%;
+  color: #f3d053;
+  text-decoration:none;
+}
+.learn-more-under{
+ border-bottom:2px solid gold;
+}
+.display-box {
+  display: none;
+}
+
+/*SPELEO ACTIVITIES*/
+.speleo_activities {
+  width: 100%;
+  height: fit-content;
+  color: white;
+}
+.speleo_activities_head {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.speleo_activities_head_h1 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #ffff;
+  font-size: 40px;
+  font: weight 900px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Style za box 1 i 3 */
+
+.speleo_activities_boxes {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.speleo_activities_box_h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #f3d053;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.speleo_activities_box1 {
+  width: 100%;
+  
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.speleo_activities_box1_text {
+  margin-top: 80px;
+  width: 40%;
+ 
+  overflow: hidden;
+}
+.speleo_activities_image {
+  width: 40%;
+
+  margin-top: 5%;
+}
+
+.speleo_activities_image2 {
+  width: 100%;
+
+  margin-top: 5%;
+}
+
+.speleo_activities_smallImg {
+  width: 100%;
+  border: 2px solid white;
+}
+/* Style za box 2 */
+.speleo_activities_box-wrap {
+  width: 40%;
+}
+.speleo_activities_box2 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+.speleo_activities_box2_text {
+  margin-top: 90px;
+  width: 100%;
+  margin-top: 100px;
+
+  overflow: hidden;
+}
+
+.speleo_activities_image2 {
+  width: 40%;
+}
+.speleo_activities_smallImg1 {
+  width: 100%;
+
+  margin-top: 5%;
+  border: 2px solid white;
+}
+
+/*SPELEO SCHOOL*/
+
+.speleo_school {
+  width: 100%;
+  height: 900px;
+  margin-top: 100px;
+  position:relative;
+  box-sizing:content-box;
+
+}
+
+.speleo_school_article {
+  position: absolute;
+  width: 90%;
+  margin-left: 10%;
+  height: 100%;
+  background-color: #383b42;
+
+}
+
+.speleo_school_yellowDiv {
+  position: absolute;
+
+  margin: 0;
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: #f3cf53;
+}
+
+.speleo_school_h1 {
+  display: flex;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  height: 200px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  padding-right: 14%;
+}
+
+.speleo_school_image {
+  position: absolute;
+  margin: 100px;
+  margin-top: 60px;
+  margin-left: 20%;
+  width:38%;
+}
+
+/*Style za slikata*/
+.speleo_school_image img {
+  border: white solid 5px;
+  box-shadow: 10px 10px 20px;
+  height:100%;
+  width:100%;
+}
+
+.speleo_school_text {
+  margin-top: 300px;
+  margin-right: 12%;
+  float: right;
+  width: 30%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speleo_school_text_p {
+  color: white;
+  font-size: large;
+}
+
+.speleo_school #button {
+  background-color: #383b42;
+}
+
+.speleo_school #button:hover {
+  background-color: #f3d053;
+  color: black;
+}
+
+/* SORABOTNICI */
+
+.sorabotnici {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  width: 100%;
+  border: 1px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  margin-top: 0px;
+  padding: 50px 50px;
+  bottom: 300px;
+}
+
+.sorabotnici_img_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+  height: 100px;
+}
+
+.sorabotnici_img_1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/images/agencija_mladi_sport.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sorabotnici_img_2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/images/pmf.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.2);
+}
+
+.sorabotnici_img_3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/images/debrecen.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sorabotnici_img_4 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/Sorabotki/MK.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+/* FOOTER */
+.footer {
+  max-height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: center;
+  padding: 50px 30px;
+  color: white;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footer_logo_section_cont {
+  max-height: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  border-right: 1px solid white;
+  margin-right: 5%;
+}
+
+.footer_logo_section_cont p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.footer_logo_section_cont h4 {
+  font-size: 26px;
+}
+
+.footer_logo_img_cont {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.footer_logo_img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_links_cont {
+  height: 100%;
+  width: 15%;
+  margin-right: 5%;
+}
+
+.footer_list_links {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  max-height: 200px;
+  height: 178px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer_links {
+  margin-bottom: 30px;
+}
+
+.footer_newsletter_section_cont {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-right: 5%;
+}
+
+.footer_newsletter_cont {
+  max-height: 200px;
+  height: 178px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footer_newsletter_heading_cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  align-items: baseline;
+}
+
+.footer_newsletter_mail_img {
+  background-image: url(../images/index/footer_newsletter_mail_img.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  font-size: 30px;
+  color: #f3d053;
+  margin-right: 10px;
+}
+
+.footer_newsletter_heading_cont h4 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.footer_newsletter {
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 45px;
+  height: 40px;
+}
+
+.footer_newsletter #email {
+  width: 70%;
+  height: 100%;
+  margin-right: 10px;
+  padding: 20px;
+  border: none;
+}
+
+.footer_newsletter #email:focus {
+  border-width: 0px;
+  border: none;
+}
+
+.footer_newsletter_btn {
+  color: white;
+  width: 30%;
+  font-size: 16px;
+  border: 1px solid #f3d053;
+  background-color: transparent;
+  height: 100%;
+}
+
+.footer_newsletter_btn:hover {
+  background-color: #ee752f;
+  cursor: pointer;
+}
+
+.footer_newsletter_links {
+  text-align: center;
+  width: 100%;
+}
+
+.footer_newsletter_links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 100;
+  list-style: none;
+}
+
+.footer_socials_section_cont {
+  max-height: 200px;
+  height: 178px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
+  align-content: center;
+  align-items: center;
+}
+
+.footer_socials_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f3d053;
+  margin-bottom: 22px;
+  font-size: 16px;
+}
+
+.footer_socials_cont:hover {
+  background-color: #ee752f;
+  cursor: pointer;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  color: #ee752f;
+}
+
+.white {
+  color: white;
+}
+
+.no-margin {
+  margin: 0px;
+}
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+/* SMALL SCREENS */
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  /* SORABOTNICI */
+  .sorabotnici {
+    bottom: 816px;
+  }
+
+  .sorabotnici_img_2 {
+    transform: scale(0.8);
+  }
+
+  /* FOOTER */
+  .footer {
+    max-height: 816px;
+    height: 816px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+
+  /* FOOTER LOGO */
+  .footer_logo_section_cont {
+    height: auto;
+    max-height: none;
+    flex-direction: row;
+    padding-bottom: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 0;
+    margin-bottom: 0;
+  }
+
+  .footer_logo_img_cont {
+    margin: 0;
+    margin-right: 25px;
+    height: 130px;
+    width: 130px;
+  }
+
+  .footer_logo_section_cont h4 {
+    font-size: 30px;
+  }
+
+  .footer_logo_section_cont p {
+    font-size: 20px;
+  }
+
+  /* FOOTER LIST LINKS */
+  .footer_links_cont {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid white;
+  }
+
+  .footer_list_links {
+    height: auto;
+    max-height: none;
+    font-size: 16px;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  /* FOOTER NEWSLETTER */
+  .footer_newsletter_section_cont {
+    height: auto;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 25px;
+  }
+
+  .footer_newsletter_cont {
+    max-height: none;
+    height: auto;
+    width: 90%;
+  }
+
+  .footer_newsletter_heading_cont {
+    margin-bottom: 25px;
+  }
+
+  .footer_newsletter_mail_img {
+    height: 45px;
+    width: 45px;
+  }
+
+  .footer_newsletter_heading_cont h4 {
+    font-size: 25px;
+  }
+
+  .footer_newsletter {
+    width: 100%;
+  }
+
+  .footer_newsletter_btn {
+    font-size: 18px;
+  }
+
+  .footer_newsletter_links li {
+    width: auto;
+  }
+
+  /* FOOTER SOCIAL ICONS */
+  .footer_socials_section_cont {
+    height: auto;
+    max-height: none;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer_socials_cont {
+    margin: 0;
+    height: 45px;
+    width: 45px;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* SORABOTNICI */
+  .sorabotnici {
+    bottom: 250px;
+  }
+
+  .sorabotnici_img_cont {
+    height: 70px;
+  }
+
+  /* FOOTER */
+
+  /* FOOTER LOGO */
+  .footer_logo_section_cont {
+    height: 150px;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 4%;
+  }
+
+  .footer_logo_img_cont {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer_logo_section_cont h4 {
+    font-size: 17px;
+  }
+
+  .footer_logo_section_cont p {
+    font-size: 10px;
+  }
+
+  /* FOOTER LIST LINKS */
+  .footer_links_cont {
+    width: 11%;
+  }
+
+  .footer_list_links {
+    height: 150px;
+    font-size: 10px;
+  }
+
+  /* FOOTER NEWSLETTER */
+  .footer_newsletter_cont {
+    height: 150px;
+    justify-content: space-between;
+  }
+
+  .footer_newsletter_heading_cont {
+    margin-bottom: 25px;
+  }
+
+  .footer_newsletter_mail_img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer_newsletter_heading_cont h4 {
+    font-size: 17px;
+  }
+
+  .footer_newsletter {
+    margin-bottom: 40px;
+    width: 95%;
+    height: 32px;
+  }
+
+  .footer_newsletter #email {
+    padding: 16px;
+  }
+
+  .footer_newsletter_btn {
+    font-size: 12px;
+  }
+
+  .footer_newsletter_links ul {
+    font-size: 10px;
+  }
+
+  /* FOOTER SOCIALS */
+  .footer_socials_section_cont {
+    height: 150px;
+    justify-content: space-between;
+  }
+
+  .footer_socials_cont {
+    font-size: 12px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+  /* SORABOTNICI */
+  .sorabotnici {
+    bottom: 260px;
+  }
+
+  .sorabotnici_img_cont {
+    height: 80px;
+  }
+
+  /* FOOTER */
+
+  /* FOOTER LOGO */
+  .footer_logo_section_cont {
+    height: 160px;
+  }
+
+  .footer_logo_img_cont {
+    width: 80px;
+    height: 80px;
+  }
+
+  .footer_logo_section_cont h4 {
+    font-size: 20px;
+  }
+
+  .footer_logo_section_cont p {
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  /* FOOTER LIST LINKS */
+  .footer_list_links {
+    height: 160px;
+    font-size: 12px;
+  }
+
+  /* FOOTER NEWSLETTER */
+  .footer_newsletter_cont {
+    height: 160px;
+  }
+
+  .footer_newsletter_heading_cont {
+    margin-bottom: 25px;
+  }
+
+  .footer_newsletter_heading_cont h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .footer_newsletter_mail_img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer_newsletter {
+    margin-bottom: 44px;
+  }
+
+  .footer_newsletter_btn {
+    font-size: 14px;
+  }
+
+  .footer_newsletter_links ul {
+    font-size: 11px;
+  }
+
+  /* FOOTER SOCIALS */
+  .footer_socials_section_cont {
+    height: 160px;
+  }
+  .footer_socials_cont {
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* FOOTER NEWSLETTER LINKS ADJUSTMENTS */
+@media only screen and (min-width: 0px) and (max-width: 415px) {
+  /* SORABOTNICI */
+  .sorabotnici {
+    padding: 30px;
+  }
+
+  .sorabotnici_img_cont {
+    height: 60px;
+  }
+
+  /* FOOTER */
+  .footer_logo_img_cont {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer_logo_section_cont h4 {
+    font-size: 20px;
+  }
+
+  .footer_logo_section_cont p {
+    font-size: 14px;
+  }
+
+  .footer_list_links {
+    font-size: 12px;
+    padding-bottom: 40px;
+  }
+
+  .footer_newsletter_section_cont {
+    padding-bottom: 40px;
+  }
+
+  .footer_newsletter_mail_img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .footer_newsletter_heading_cont h4 {
+    font-size: 16px;
+    text-size-adjust: 90%;
+  }
+
+  .footer_newsletter {
+    height: 35px;
+  }
+
+  .footer_newsletter_btn {
+    font-size: 12px;
+  }
+
+  .footer_newsletter #email {
+    padding: 15px;
+  }
+
+  .footer_newsletter_links ul {
+    font-size: 10px;
+  }
+
+  .footer_socials_cont {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+  /* SORABOTNICI */
+  .sorabotnici {
+    padding: 40px;
+  }
+
+  .sorabotnici_img_cont {
+    height: 60px;
+  }
+
+  .sorabotnici_img_2 {
+    transform: none;
+  }
+
+  /* FOOTER */
+  .footer_logo_section_cont {
+    margin: 0;
+  }
+
+  .footer_logo_img_cont {
+    width: 90px;
+    height: 90px;
+  }
+
+  .footer_logo_section_cont h4 {
+    font-size: 20px;
+  }
+
+  .footer_logo_section_cont p {
+    font-size: 16px;
+  }
+
+  .footer_links_cont {
+    margin: 0;
+  }
+
+  .footer_list_links {
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
+
+  .footer_newsletter_section_cont {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .footer_newsletter_heading_cont h4 {
+    font-size: 19px;
+  }
+  .footer_newsletter_mail_img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .footer_newsletter {
+    height: 35px;
+  }
+
+  .footer_newsletter_btn {
+    font-size: 14px;
+  }
+
+  .footer_newsletter #email {
+    padding: 15px;
+  }
+
+  .footer_newsletter_links ul {
+    font-size: 12px;
+  }
+
+  .footer_socials_cont {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .footer_newsletter_links li {
+    width: 81px;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .footer_newsletter {
+    margin-bottom: 25px;
+  }
+
+  .footer_newsletter_links li {
+    width: 81px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 365px) {
+  /* SORABOTNICI */
+  .sorabotnici {
+    padding: 25px;
+  }
+
+  .sorabotnici_img_cont {
+    height: 60px;
+  }
+
+  /* FOOTER */
+  .footer_logo_section_cont p {
+    font-size: 11px;
+  }
+
+  .footer_newsletter_section_cont {
+    padding-bottom: 50px;
+  }
+
+  .footer_newsletter_mail_img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .footer_newsletter_heading_cont h4 {
+    font-size: 13px;
+  }
+
+  .footer_newsletter_btn {
+    font-size: 10px;
+  }
+
+  .footer_newsletter_links ul {
+    font-size: 10px;
+  }
+
+  .footer_list_links {
+    font-size: 11px;
+    padding-bottom: 50px;
+  }
+
+  .footer_socials_cont {
+    font-size: 12px;
+    height: 35px;
+    width: 35px;
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 1500px) {
+
+
+/*CLUBS*/
+.clubs_head {
+  text-align: center;
+}
+.clubs {
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+}
+.club_box {
+  margin-top: 10%;
+}
+.map {
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.map > img {
+  width: 600px;
+  height: 400px;
+}
+.area1 {
+  width: 100%;
+  height: 400px;
+}
+.clubs_box {
+  background-color: #1c1c1c;
+  width: 40%;
+  height: 500px;
+  float: right;
+  border-radius: 20px;
+  margin-right: 5%;
+}
+.clubs_head {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #ffff;
+  font-size: 40px;
+  font: weight 900px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .speleo_activities_box1_text {
+    margin-top: 0px;
+    width: 40%;
+   
+    overflow: hidden;
+  }
+  .speleo_activities_image {
+    width: 40%;
+  
+    margin-top: 5%;
+  }
+  
+  .speleo_activities_image2 {
+    width: 40%;
+  
+    margin-top: 5%;
+  }
+  
+  .speleo_activities_smallImg {
+    width: 100%;
+    border: 2px solid white;
+  }
+  /* Style za box 2 */
+  .speleo_activities_box-wrap {
+    width: 40%;
+  }
+  .speleo_activities_box2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .speleo_activities_box2_text {
+    margin-top: 0px;
+    width: 100%;
+    margin-top: 30px;
+  
+    overflow: hidden;
+  }
+  
+
+  .speleo_news_text{
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px){
+
+
+/*SPELEO SCHOOL*/
+
+.speleo_school {
+  width: 100%;
+  height: 900px;
+  margin-top: 100px;
+  position:relative;
+  box-sizing:content-box;
+
+}
+
+.speleo_school_article {
+  position: absolute;
+  width: 100%;
+  margin-left: 0%;
+  height: 80%;
+  background-color: #383b42;
+
+}
+
+.speleo_school_yellowDiv {
+  position: absolute;
+
+  margin: 0;
+  margin-top: 100px;
+  width: 100%;
+  height:150px;
+  text-align: center;
+  background-color: #f3cf53;
+}
+
+.speleo_school_h1 {
+  display: flex;
+  float:none;
+  font-size: 30px;
+  font-weight: bold;
+  height: 200px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+margin-left:50%;
+}
+
+.speleo_school_image {
+  position: absolute;
+  margin: 100px;
+  margin-top: 60px;
+  margin-left: 3%;
+  width:38%;
+}
+
+/*Style za slikata*/
+.speleo_school_image img {
+  border: white solid 5px;
+  box-shadow: 10px 10px 20px;
+  height:100%;
+  width:100%;
+}
+
+.speleo_school_text {
+  margin-top: 300px;
+  margin-right: 3%;
+  float: right;
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speleo_school_text_p {
+  color: white;
+  font-size: large;
+}
+
+.speleo_school #button {
+  background-color: #383b42;
+}
+
+.speleo_school #button:hover {
+  background-color: #f3d053;
+  color: black;
+}
+
+
+
+
+
+/*CLUBS*/
+.clubs_head {
+  text-align: center;
+}
+.clubs {
+  width: 100%;
+  height:100%;
+  margin: 0 auto;
+  text-align:center;
+  
+  
+}
+.club_box {
+  margin-top: 10%;
+}
+.map {
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.map > img {
+  width: 600px;
+  height: 400px;
+}
+.area1 {
+  width: 100%;
+  height: 400px;
+}
+.clubs_box {
+  background-color: #1c1c1c;
+  width: 70%;
+  margin-left:15%;
+  margin-top:100px;
+  height:500px;
+  float: none;
+  margin-bottom:100px;
+  
+
+  border-radius: 20px;
+  margin-right: 5%;
+}
+.clubs_head {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #ffff;
+  font-size: 40px;
+  font: weight 900px;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.index_speleo_news1,
+.index_speleo_news2,
+.index_speleo_news3 {
+  width:100%;
+  height: 220px;
+  border: 3px solid #ffff;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  
+  .speleo_intro_text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 2px solid #f3d053;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 25px;
+    text-align: center;
+    bottom: -10%;
+  }
+
+  .index_speleo_news {
+    width: 80%;
+    margin: auto;
+    display: block;
+    justify-content: space-between;
+    margin-top:0px;
+  }
+  .speleo_news_container_h1{
+    margin-top:100px;
+  }
+  .speleo_news_h2{
+    margin-top:10px;
+  }
+  .index_speleo_news_articles {
+    position: relative;
+
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .index_speleo_news_articles3 {
+    position: relative;
+    margin-top: 100px;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .speleo_news_text{
+margin-top:0px;
+  }
+  .speleo_activities_box_h2{
+    margin-bottom:15px;
+  }
+  .clubs_box {
+    background-color: #1c1c1c;
+    width: 100%;
+    height: 500px;
+    float: right;
+    border-radius: 20px;
+    margin-right: 5%;
+  }
+  .speleo_activities_head_h1{
+    margin-top:50px;
+  }
+  .speleo_activities_box1 {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    display: block;
+    justify-content: space-between;
+  }
+  .speleo_activities_box1_text {
+    margin-top: 50px;
+    width: 100%;
+  
+    overflow: hidden;
+  }
+  .speleo_activities_box1_text p{
+    margin-bottom:12px;
+  }
+  .speleo_activities_box2_text p{
+    margin-bottom:12px;
+  }
+  .speleo_activities_image {
+    width: 100%;
+
+    margin-top: 5%;
+  }
+  .speleo_activities_box2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .speleo_activities_box2_text {
+    margin-top: 50px;
+    width: 100%;
+    
+    
+    overflow: hidden;
+  }
+
+  .speleo_activities_image2 {
+    width: 100%;
+  }
+  .speleo_activities_box-wrap {
+    width: 100%;
+  }
+
+  /*SPELEO SCHOOL*/
+
+  .speleo_school {
+    width: 100%;
+
+    height: 500px;
+    margin-top: 100px;
+  }
+
+  .speleo_school_article {
+    position: absolute;
+    width: 100%;
+    margin-left: 0%;
+    height: 800px;
+    background-color: #383b42;
+  }
+
+  .speleo_school_yellowDiv {
+    position: absolute;
+    margin: 0;
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #f3cf53;
+  }
+
+  .speleo_school_h1 {
+    display: flex;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    height: 200px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    padding-right: 14%;
+  }
+
+  .speleo_school_image {
+    position: absolute;
+    margin: 100px;
+    margin-top: 60px;
+    margin-left: 1%;
+  }
+
+  /*Style za slikata*/
+  .speleo_school_image img {
+    border: white solid 5px;
+    box-shadow: 10px 10px 20px;
+    width: 40%;
+    display: none;
+  }
+
+  .speleo_school_text {
+    margin-top: 300px;
+    margin-right: 0%;
+    float: right;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speleo_school_text_p {
+    color: white;
+    font-size: large;
+  }
+
+  .speleo_school #button {
+    background-color: #383b42;
+  }
+
+  .speleo_school #button:hover {
+    background-color: #f3d053;
+    color: black;
+  }
+
+  .sorabotnici {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    width: 100%;
+    border: 1px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: adgtrfv0px;
+    padding: 50px 50px;
+    bottom: 300px;
+  }
+  .clubs {
+    display: none;
+  }
+
+  .index_speleo_news {
+    width: 90%;
+    margin: auto;
+  }
+
+  .sorabotnici {
+    margin-top: 300px;
+  }
+  #button {
+margin-top:10px;
+
+  }
+  .speleo_activities_head_h1 {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: #ffff;
+    font-size: 2rem;
+    font: weight 900px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .index_speleo_news1{
+    width:100%;
+  }
+  .index_speleo_news3{
+    width:100%;
+  }
+  .index_speleo_news2{
+    width:100%;
+  }
+  .speleo_intro_text_p{
+font-size:13px;
+  }
+ 
+  .speleo_school_h1 {
+    
+    float:none;
+    font-size: 40px;
+    font-weight: bold;
+   
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+    padding-right:0%;
+  }
+  .speleo_school_yellowDiv {
+  position: absolute;
+ display:flex;
+ justify-content: center;
+  margin: 0;
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: #f3cf53;
+}
+#button {
+  padding: 5px 10px;
+  border: 1px solid #f3d053;
+  background-color: black;
+  /* opacity: 0.4; */
+  color: white;
+}
+
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+.index_speleo_news1,
+.index_speleo_news2,
+.index_speleo_news3 {
+  width:80%;
+  height: 220px;
+  border: 3px solid #ffff;
+  margin: 0 auto;
+  display: block;
+}
+
+
+}
